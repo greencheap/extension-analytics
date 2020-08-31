@@ -1,4 +1,4 @@
 <?php
 return [
-    'name' => 'extension-build'
+    'name' => 'googleanalytics'
 ];

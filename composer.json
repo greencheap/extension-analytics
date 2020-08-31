@@ -1,9 +1,9 @@
 {
-    "name": "greencheap/extension-build",
+    "name": "greencheap/googleanalytics",
     "type": "greencheap-extension",
     "version": "1.0.0",
-    "title": "GreenCheap Build Extension",
-    "description": "GreenCheap paket build taslağı, bu taslak ile kurallara uygun paket oluşturabilirsiniz",
+    "title": "Google Analytics",
+    "description": "Google Analytics'den gelen verilerle istatistikler tutabilirsiniz. Analytics'e girmeden tüm raporlarınızı görebilirsiniz.",
     "license": "MIT",
     "authors": [
         {
