@@ -1,9 +1,9 @@
 {
-    "name": "greencheap/googleanalytics",
+    "name": "greencheap/metrica",
     "type": "greencheap-extension",
     "version": "1.0.0",
-    "title": "Google Analytics",
-    "description": "Google Analytics'den gelen verilerle istatistikler tutabilirsiniz. Analytics'e girmeden tüm raporlarınızı görebilirsiniz.",
+    "title": "Yandex Metrica",
+    "description": "Yandex Metrica'dan gelen verilerle istatistikler tutabilirsiniz. Metrica'e girmeden tüm raporlarınızı görebilirsiniz.",
     "license": "MIT",
     "authors": [
         {

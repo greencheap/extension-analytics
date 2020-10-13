@@ -1,1 +1,1 @@
-# Google Analytics
+# Yandex Metrica
