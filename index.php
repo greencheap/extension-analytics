@@ -1,40 +1,33 @@
 <?php
 return [
-    'name' => 'metrica',
+    'name' => 'analytics',
 
     'autoload' => [
-        'GreenCheap\\Metrica\\' => 'src'
+        'GreenCheap\\Analytics\\' => 'src'
     ],
 
     'routes' => [
-        '/metrica' => [
-            'name' => '@metrica',
-            'controller' => 'GreenCheap\\Metrica\\Controller\\CallBackController'
+        'api/analytics' => [
+            'name' => '@api/analytics',
+            'controller' => 'GreenCheap\\Analytics\\Controller\\ApiReportingController'
         ]
     ],
 
-    'settings' => 'metrica-settings',
-
     'config' => [
-        'id' => '',
-        'password' => '',
-        'access_token' => ''
+        'view_id' => ''
     ],
 
     'events' => [
 
         'view.layout' => function ($event, $view) use ($app) {
-
             if (!$app->isAdmin()) {
                 return;
             }
-            $view->data('$metrica', $this->get('config'));
+            $view->data('$analytics', $this->get('config'));
         },
 
         'view.scripts' => function ($event, $scripts) {
-            $scripts->register('metrica-settings', 'metrica:app/bundle/metrica-settings.js', ['~extensions', 'input-tree']);
-            $scripts->register('metrica-widgets', 'metrica:app/bundle/metrica-widgets.js', ['~dashboard']);
-        },
-
+            $scripts->register('analytics-widgets', 'analytics:app/bundle/analytics-widgets.js', ['~dashboard']);
+        }
     ],
 ];

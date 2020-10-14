@@ -3,8 +3,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        'metrica-settings':'./app/components/metrica-settings.vue',
-        'metrica-widgets':'./app/components/metrica-widgets.vue'
+        'analytics-widgets':'./app/components/analytics-widgets.vue'
     },
     output: {
         path: path.resolve(__dirname, './app/bundle'),
