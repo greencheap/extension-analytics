@@ -1,0 +1,79 @@
+[
+    {
+        "name":"user",
+        "alias": "User",
+        "default_tag": "dimensions",
+        "tagsFor":["dimensions","metrics"],
+        "tag": {
+            "dimensions": [
+                {"name":"ga:userType", "alias":"User Type"},
+                {"name":"ga:sessionCount", "alias":"Count of Sessions"},
+                {"name":"ga:daysSinceLastSession", "alias":"Days Since Last Session"},
+                {"name":"ga:userDefinedValue", "alias":"User Defined Value"},
+                {"name":"ga:userBucket", "alias":"User Bucket"}
+            ],
+            "metrics": [
+                {"name":"ga:users", "alias":"Users"},
+                {"name":"ga:newUsers", "alias":"New Users"},
+                {"name":"ga:percentNewSessions", "alias":"% New Sessions"},
+                {"name":"ga:percentNewSessions", "alias":"% New Sessions"}
+            ]
+        }
+    },
+    {
+        "name":"session",
+        "alias": "Session",
+        "default_tag": "dimensions",
+        "tagsFor":["dimensions","metrics"],
+        "tag": {
+            "dimensions": [
+                {"name":"ga:sessionDurationBucket", "alias":"Session Duration"}
+            ],
+            "metrics": [
+                {"name":"ga:sessions", "alias":"Sessions"},
+                {"name":"ga:bouncesRate", "alias":"Bounce Rate"}
+            ]
+        }
+    },
+    {
+        "name":"geoNetwork",
+        "alias": "Geo Network",
+        "default_tag": "dimensions",
+        "tagsFor":["dimensions"],
+        "tag": {
+            "dimensions": [
+                {"name":"ga:country", "alias":"Country"},
+                {"name":"ga:continent", "alias":"Continentga"},
+                {"name":"ga:subContinent", "alias":"Sub Continent"},
+                {"name":"ga:region", "alias":"Regionga"},
+                {"name":"ga:metro", "alias":"Metro"},
+                {"name":"ga:city", "alias":"City"},
+                {"name":"ga:networkDomain", "alias":"Network Domain"},
+                {"name":"ga:networkDomain", "alias":"Network Domain"}
+            ]
+        }
+    },
+    {
+        "name":"platformordevice",
+        "alias": "Platform or Device",
+        "default_tag": "dimensions",
+        "tagsFor":["dimensions"],
+        "tag": {
+            "dimensions": [
+                {"name":"ga:browser", "alias":"Browser"},
+                {"name":"ga:operatingSystem", "alias":"Operating System"}
+            ]
+        }
+    },
+    {
+        "name":"system",
+        "alias": "System",
+        "default_tag": "dimensions",
+        "tagsFor":["dimensions"],
+        "tag": {
+            "dimensions": [
+                {"name":"ga:language", "alias":"Language"}
+            ]
+        }
+    }
+]

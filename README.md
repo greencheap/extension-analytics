@@ -1,3 +1,1 @@
 # Google Analytics
-
-Hello World

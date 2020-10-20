@@ -23,7 +23,11 @@ return [
             if (!$app->isAdmin()) {
                 return;
             }
+
+            $explorerPath = json_decode(file_get_contents($this->path.'/explorer.json'));
+            
             $view->data('$analytics', $this->get('config'));
+            $view->data('$explorer' , $explorerPath);
         },
 
         'view.scripts' => function ($event, $scripts) {
