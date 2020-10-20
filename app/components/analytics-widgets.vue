@@ -19,7 +19,7 @@
 
         <div v-if="editing" class="uk-card-header pk-panel-teaser">
 
-            <div class="uk-margin-large-top">
+            <div class="uk-margin-top">
                 <label class="uk-form-label">{{ 'Report Style' | trans }}</label>
                 <div class="uk-form-controls">
                     <select class="uk-select uk-width-expand" v-model="widget.explorer.explorer">
@@ -98,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="uk-margin-top uk-text-center" v-if="!config.view_id">
+            <div class="uk-margin-medium-top uk-text-center" v-if="!config.view_id">
                 <p>{{'The widget information is not configured correctly. Please update the settings.' | trans}}</p>
                 <button class="uk-button uk-button-small uk-button-primary" @click.prevent="openEditing">{{ 'Open The Settings' | trans }}</button>
             </div>
@@ -260,6 +260,7 @@ const Analytics = {
             this.$notify(this.$trans('Wait...'));
             this.$http.post('admin/system/settings/config', { name: 'analytics', config: this.config }).then(function () {
                 this.$notify('Settings saved.', '');
+                this.load();
             }).catch(function (response) {
                 this.$notify(response.message, 'danger');
             })
