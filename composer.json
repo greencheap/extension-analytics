@@ -1,9 +1,9 @@
 {
     "name": "greencheap/analytics",
     "type": "greencheap-extension",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "title": "Google Analytics",
-    "description": "Google Analytics'dan gelen verilerle istatistikler tutabilirsiniz. Analytics'e girmeden tüm raporlarınızı görebilirsiniz.",
+    "description": "You can keep statistics with data from Google Analytics. All your reports without going into Analytics.",
     "license": "MIT",
     "authors": [
         {
@@ -19,8 +19,5 @@
     },
     "archive": {
         "exclude": ["node_modules", "!/app"]
-    },
-    "require": {
-        "google/apiclient": "^2.7"
     }
 }
