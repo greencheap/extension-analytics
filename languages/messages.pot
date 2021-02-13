@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GreenCheap 3.0.3 (greencheap/analytics, messages)\n"
+"POT-Creation-Date: 2021-02-13 13:11+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Wait..."
+msgstr ""
+
+msgid "Test API"
+msgstr ""
+
+msgid "Report Style"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Chart"
+msgstr ""
+
+msgid "Open The Settings"
+msgstr ""
+
+msgid "Google Analytics Settings"
+msgstr ""
+
+msgid "View Id"
+msgstr ""
+
+msgid "Go To Analytics Docs"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Not Found View ID"
+msgstr ""
+
+msgid "Successfully connected to Analytics"
+msgstr ""
+

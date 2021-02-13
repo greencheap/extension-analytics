@@ -17,7 +17,7 @@ class ApiReportingController extends GoogleService
     public function getReportAction(string $view_id = '', array $analytics = [], array $explorer = [])
     {
         if (!$view_id) {
-            return App::abort(500, __('Not Found View ID'));
+            return App::jsonabort(500, __('Not Found View ID'));
         }
         try {
             // Create the DateRange object.
@@ -73,7 +73,7 @@ class ApiReportingController extends GoogleService
     public function testApiAction(string $view_id = '')
     {
         if (!$view_id) {
-            return App::abort(500, __('Not Found View ID'));
+            return App::jsonabort(500, __('Not Found View ID'));
         }
         try {
             $request = new \Google_Service_AnalyticsReporting_ReportRequest();
